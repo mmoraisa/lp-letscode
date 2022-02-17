@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { BIG_SCREEN_DEVICES } from '../../defaults/Breakpoints';
 
 export const Container = styled.div`
+  height: calc(25vw + 90px);
   position: relative;
 
   @media only screen and (max-width: ${BIG_SCREEN_DEVICES}px) {
