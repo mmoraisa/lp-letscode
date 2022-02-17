@@ -7,17 +7,19 @@ const images = [
 ]
 
 const WelcomeImages = () => (
-  <Container>
-    {
-      images.map((image, i) => 
-        <Image
-          key={i}
-          i={i}
-          alt={`imagem ${i}`}
-          src={image} />    
-      )
-    }
-  </Container>
+  <div>
+    <Container>
+      {
+        images.map((image, i) => 
+          <Image
+            key={i}
+            i={i}
+            alt={`imagem ${i}`}
+            src={image} />    
+        )
+      }
+    </Container>
+  </div>
 );
 
 export default WelcomeImages;
