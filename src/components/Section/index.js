@@ -1,4 +1,5 @@
 import { StyledSection } from './styles'
+import { PRIMARY_COLOR, WHITE } from '../../defaults/Colors'
 import PropTypes from 'prop-types'
 
 const Section = ({ children, title, styles }) => (
@@ -13,7 +14,10 @@ const Section = ({ children, title, styles }) => (
 
 Section.defaultProps = {
   title: '',
-  styles: {}
+  styles: {
+    backgroundColor: PRIMARY_COLOR,
+    color: WHITE
+  }
 }
 
 Section.propTypes = {

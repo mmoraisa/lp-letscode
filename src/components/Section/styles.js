@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
-export const StyledSection = styled.section`
-  margin: 30px -30px;
+export const StyledSection = styled.section.attrs({
+  'data-test-id': 'secao'
+})`
+  margin: 0 -30px;
   padding: 30px 80px;
 
   ${({ color }) => color && `

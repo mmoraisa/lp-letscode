@@ -9,32 +9,21 @@ const App = () => (
       <WelcomeInfo />
       <WelcomeImages />
     </WelcomeContainer>
-    <Section
-      title="Texto do título"
-      styles={{
-        color: '#000',
-        backgroundColor: '#cccccc'
-      }}>
+    <Section title="Texto do título 1">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla error vel necessitatibus, expedita esse autem, dolor excepturi delectus facere voluptatum totam eaque quae. Unde, eveniet fuga. Dolore, consequuntur incidunt.
       </p>
     </Section>
     <Section
-      title="Texto do título"
+      title="Texto do título 1"
       styles={{
-        color: '#000',
-        backgroundColor: '#fff'
+        color: 'red'
       }}>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla error vel necessitatibus, expedita esse autem, dolor excepturi delectus facere voluptatum totam eaque quae. Unde, eveniet fuga. Dolore, consequuntur incidunt.
       </p>
     </Section>
-    <Section
-      title="Texto do título"
-      styles={{
-        color: '#000',
-        backgroundColor: '#cccccc'
-      }}>
+    <Section title="Texto do título 1">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla error vel necessitatibus, expedita esse autem, dolor excepturi delectus facere voluptatum totam eaque quae. Unde, eveniet fuga. Dolore, consequuntur incidunt.
       </p>

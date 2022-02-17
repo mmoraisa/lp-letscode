@@ -4,6 +4,7 @@ import { BIG_SCREEN_DEVICES } from './defaults/Breakpoints'
 export const WelcomeContainer = styled.div`
   display: flex;
   flex-direction: column-reverse;
+  margin-bottom: 30px;
 
   & > * {
     flex: 1;
