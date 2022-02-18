@@ -31,7 +31,7 @@ Section.defaultProps = {
 }
 
 Section.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.any.isRequired,
   title: PropTypes.string,
   bodyStyles: PropTypes.shape({
     display: PropTypes.string,
