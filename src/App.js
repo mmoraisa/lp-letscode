@@ -1,5 +1,6 @@
 import Product from './components/Product';
 import Section from './components/Section';
+import SocialMedia from './components/SocialMedia';
 import WelcomeImages from './components/WelcomeImages';
 import WelcomeInfo from './components/WelcomeInfo';
 import { LIGHT_GRAY, WHITE } from './defaults/Colors';
@@ -52,8 +53,18 @@ const App = () => (
       </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, soluta. Laudantium, error praesentium dolores eveniet nulla facilis numquam, sed dolorem porro, tempore hic aperiam sunt assumenda odit. Delectus, molestias distinctio.
-      
       </p>
+      <div>
+        <SocialMedia
+          link='http://letscode.com.br'
+          imgSrc='https://alociencia.com.br/wp-content/uploads/2016/07/twitter-logo.png' />
+        <SocialMedia
+          link='http://letscode.com.br'
+          imgSrc='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png' />
+        <SocialMedia
+          link='http://letscode.com.br'
+          imgSrc='https://icons-for-free.com/iconfiles/png/512/github+logo+icon-1320193261904451658.png' />
+      </div>
     </Section>
   </>
 );
