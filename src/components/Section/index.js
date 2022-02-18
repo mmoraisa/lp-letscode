@@ -1,26 +1,33 @@
 import { Body, StyledSection } from './styles'
-import { PRIMARY_COLOR, WHITE } from '../../defaults/Colors'
+import { BLACK, PRIMARY_COLOR } from '../../defaults/Colors'
 import PropTypes from 'prop-types'
 
-const Section = ({ children, title, bodyStyles, styles }) => (
-  <StyledSection {...styles}>
-    {
-      title &&
-      <h1>{title}</h1>
-    }
-    <Body {...bodyStyles}>
-      {children}
-    </Body>
-  </StyledSection>
-)
+const defaultStyles = {
+  backgroundColor: PRIMARY_COLOR,
+  color: BLACK
+}
+
+const Section = ({ children, title, bodyStyles, styles }) => {
+
+  const sectionStyles = {...defaultStyles, ...styles}
+
+  return (
+    <StyledSection {...sectionStyles}>
+      {
+        title &&
+        <h1>{title}</h1>
+      }
+      <Body {...bodyStyles}>
+        {children}
+      </Body>
+    </StyledSection>
+  )
+}
 
 Section.defaultProps = {
   title: '',
   bodyStyles: {},
-  styles: {
-    backgroundColor: PRIMARY_COLOR,
-    color: WHITE
-  }
+  styles: defaultStyles
 }
 
 Section.propTypes = {

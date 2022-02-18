@@ -24,7 +24,7 @@ const App = () => (
     <Section
       title="Texto do título 1"
       styles={{
-        color: 'red'
+        backgroundColor: '#ccc'
       }}>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla error vel necessitatibus, expedita esse autem, dolor excepturi delectus facere voluptatum totam eaque quae. Unde, eveniet fuga. Dolore, consequuntur incidunt.
