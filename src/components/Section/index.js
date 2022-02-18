@@ -35,7 +35,10 @@ Section.propTypes = {
   title: PropTypes.string,
   bodyStyles: PropTypes.shape({
     display: PropTypes.string,
-    justifyContent: PropTypes.string,
+    gridTemplateColumns: PropTypes.string,
+    mobileGridTemplateColumns: PropTypes.string,
+    columnGap: PropTypes.string,
+    rowGap: PropTypes.string,
   }),
   styles: PropTypes.shape({
     backgroundColor: PropTypes.string,

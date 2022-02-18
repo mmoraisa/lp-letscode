@@ -33,6 +33,7 @@ const App = () => (
       bodyStyles={{
         display: 'grid',
         gridTemplateColumns: 'repeat(2, 1fr)',
+        mobileGridTemplateColumns: 'repeat(1, 1fr)',
         columnGap: '30px',
         rowGap: '30px',
       }}>
