@@ -1,9 +1,12 @@
 import PropTypes from 'prop-types'
+import { useContext } from 'react';
+import ModalsContext from '../../contexts/ModalsContext'
 import Button from '../Button';
 import { Wrapper } from './styles'
 
 const Product = ({ service }) => {
   
+  const { captureLead } = useContext(ModalsContext)
   const { name, label, description } = service;
  
   return (
@@ -12,7 +15,7 @@ const Product = ({ service }) => {
       <p>
         {description}
       </p>
-      <Button>Quero saber mais!</Button>
+      <Button onClick={captureLead.open}>Quero saber mais!</Button>
     </Wrapper>
   )
 }

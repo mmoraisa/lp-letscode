@@ -1,15 +1,18 @@
-import { useState } from 'react'
+import { useContext } from 'react'
+import ModalsContext from '../../../contexts/ModalsContext'
 import s from './styles'
 
 const ModalCaptureLead = () => {
 
-  const [modalVisible, setModalVisible] = useState(false)
+  const { captureLead } = useContext(ModalsContext)
 
   return (
     <>
-      <s.Modal visible={modalVisible}>Modal</s.Modal>
-      <s.Overlay visible={modalVisible} />
-      <button onClick={() => setModalVisible(true)}>Mostra modal</button>
+      <s.Modal visible={captureLead.visible}>
+        <button onClick={captureLead.close}>Fechar</button>
+        Modal
+      </s.Modal>
+      <s.Overlay visible={captureLead.visible} onClick={captureLead.close}/>
     </>
   )
 }
