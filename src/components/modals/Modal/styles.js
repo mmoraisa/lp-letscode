@@ -6,7 +6,6 @@ const Modal = styled.div`
   background: white;
   border-radius: 10px;
   box-shadow: 5px 5px 30px rgb(0 0 0 / 30%);
-  height: 300px;
   box-sizing: border-box;
   padding: 30px;
   width: 400px;
@@ -27,10 +26,28 @@ const Modal = styled.div`
   `}
 
   @media only screen and (max-width: ${SMALL_SCREEN_DEVICES}px) {
-    height: 90%;
     width: 90%;
     top: 5%;
     left: 5%;
+  }
+
+  & h1 {
+    font-size: 24px;
+  }
+`
+
+const BtnClose = styled.button`
+  background: none;
+  border: none;
+  font-size: 23px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  transition: .05s color ease;
+
+  &:hover {
+    color: #929292;
   }
 `
 
@@ -52,4 +69,4 @@ const Overlay = styled.div`
   `}
 `
 
-export default { Modal, Overlay }
+export default { BtnClose, Modal, Overlay }

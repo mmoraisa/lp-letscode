@@ -1,19 +1,18 @@
 import { useContext } from 'react'
+import Modal from '../Modal'
 import ModalsContext from '../../../contexts/ModalsContext'
-import s from './styles'
 
 const ModalCaptureLead = () => {
 
   const { captureLead } = useContext(ModalsContext)
 
   return (
-    <>
-      <s.Modal visible={captureLead.visible}>
-        <button onClick={captureLead.close}>Fechar</button>
-        Modal
-      </s.Modal>
-      <s.Overlay visible={captureLead.visible} onClick={captureLead.close}/>
-    </>
+    <Modal
+      visible={captureLead.visible}
+      close={captureLead.close}
+      title="Registrar interesse">
+        <div>Conteúdo</div>
+      </Modal>
   )
 }
 
