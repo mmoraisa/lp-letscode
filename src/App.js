@@ -1,3 +1,4 @@
+import ModalCaptureLead from './components/modals/ModalCaptureLead';
 import Product from './components/Product';
 import Section from './components/Section';
 import SocialMedia from './components/SocialMedia';
@@ -67,6 +68,7 @@ const App = () => (
           imgSrc='https://icons-for-free.com/iconfiles/png/512/github+logo+icon-1320193261904451658.png' />
       </div>
     </Section>
+    <ModalCaptureLead />
   </>
 );
 
