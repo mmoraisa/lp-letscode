@@ -1,5 +1,5 @@
 import { Body, StyledSection } from './styles'
-import { BLACK, PRIMARY_COLOR } from '../../defaults/Colors'
+import { BLACK, PRIMARY_COLOR } from 'defaults/Colors'
 import PropTypes from 'prop-types'
 
 const defaultStyles = {

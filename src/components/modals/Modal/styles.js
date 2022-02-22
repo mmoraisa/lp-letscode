@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { SMALL_SCREEN_DEVICES } from '../../../defaults/Breakpoints'
+import { SMALL_SCREEN_DEVICES } from 'defaults/Breakpoints'
 
 const Modal = styled.div`
   position: fixed;

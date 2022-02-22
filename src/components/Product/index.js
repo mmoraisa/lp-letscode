@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { useContext } from 'react';
-import ModalsContext from '../../contexts/ModalsContext'
+import ModalsContext from 'contexts/ModalsContext'
 import Button from '../Button';
 import { Wrapper } from './styles'
 

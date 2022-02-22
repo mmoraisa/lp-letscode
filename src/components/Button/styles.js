@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { BLACK, WHITE } from '../../defaults/Colors'
+import { BLACK, WHITE } from 'defaults/Colors'
 
 export const StyledButton = styled.button.attrs({
   type: 'button'

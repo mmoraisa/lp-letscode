@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import Modal from '../Modal'
-import ModalsContext from '../../../contexts/ModalsContext'
+import ModalsContext from 'contexts/ModalsContext'
 
 const ModalCaptureLead = () => {
 

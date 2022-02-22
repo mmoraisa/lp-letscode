@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { BIG_SCREEN_DEVICES } from './defaults/Breakpoints'
+import { BIG_SCREEN_DEVICES } from 'defaults/Breakpoints'
 
 export const WelcomeContainer = styled.div`
   display: flex;

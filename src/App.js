@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import ModalCaptureLead from './components/modals/ModalCaptureLead';
-import Product from './components/Product';
-import Section from './components/Section';
-import SocialMedia from './components/SocialMedia';
-import WelcomeImages from './components/WelcomeImages';
-import WelcomeInfo from './components/WelcomeInfo';
-import ModalsContext from './contexts/ModalsContext';
-import { LIGHT_GRAY, WHITE } from './defaults/Colors';
+import ModalCaptureLead from 'components/modals/ModalCaptureLead';
+import Product from 'components/Product';
+import Section from 'components/Section';
+import SocialMedia from 'components/SocialMedia';
+import WelcomeImages from 'components/WelcomeImages';
+import WelcomeInfo from 'components/WelcomeInfo';
+import ModalsContext from 'contexts/ModalsContext';
+import { LIGHT_GRAY, WHITE } from 'defaults/Colors';
 import { WelcomeContainer } from './styles'
 
 const services = [

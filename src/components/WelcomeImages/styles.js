@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { BIG_SCREEN_DEVICES } from '../../defaults/Breakpoints';
+import { BIG_SCREEN_DEVICES } from 'defaults/Breakpoints';
 
 export const Container = styled.div`
   height: calc(25vw + 90px);
