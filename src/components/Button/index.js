@@ -11,12 +11,13 @@ const Button = ({ children, onClick, type, styles }) => (
 )
 
 Button.defaultProps = {
-  type: ''
+  type: 'button',
+  onClick: () => undefined,
 }
 
 Button.propTypes = {
   children: PropTypes.any.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   type: PropTypes.string
 }
 

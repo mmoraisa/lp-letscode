@@ -15,7 +15,9 @@ const Product = ({ service }) => {
       <p>
         {description}
       </p>
-      <Button onClick={captureLead.open}>Quero saber mais!</Button>
+      <Button onClick={() => captureLead.open(name)}>
+        Quero saber mais!
+      </Button>
     </Wrapper>
   )
 }

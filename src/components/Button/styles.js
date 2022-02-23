@@ -1,11 +1,7 @@
 import styled from 'styled-components'
 import { BLACK, WHITE } from 'defaults/Colors'
 
-export const StyledButton = styled.button.attrs(
-  ({ type }) => ({
-    type: type || 'button'
-  })
-)`
+export const StyledButton = styled.button`
   background: ${WHITE};
   border: none;
   border-radius: 10px;

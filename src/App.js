@@ -31,15 +31,20 @@ const App = () => {
     setModalCaptureLeadVisible
   ] = useState(false)
 
+  const [interest, setInterest] = useState('')
+
   const closeModalCaptureLead = () =>
     setModalCaptureLeadVisible(false)
 
-  const openModalCaptureLead = () =>
+  const openModalCaptureLead = interest => {
+    setInterest(interest)
     setModalCaptureLeadVisible(true)
+  }
 
   return (
     <ModalsContext.Provider value={{
       captureLead: {
+        interest,
         visible: modalCaptureLeadVisible,
         close: closeModalCaptureLead,
         open: openModalCaptureLead
